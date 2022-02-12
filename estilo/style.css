@@ -5,14 +5,46 @@ body {
     background-color: rgb(204, 157, 248);
 }
 
+h1, h2 {
+    color: #3a0070;
+}
+
 h1, h3 {
     text-align: center;
 }
 
 div {
     background-color: white;
-    max-width: 500px;
+    max-width: 560px;
     margin: auto;
     padding: 20px;
     box-shadow: 3px 3px 5px #00000080;
+}
+
+.lado {
+    float: right;
+}
+
+a {
+    font-weight: bold;
+    color: #3a0070;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1a1aff;
+}
+
+h3 > a {
+    font-style: italic;
+    color: #1a1aff;
+}
+
+h3 > a:hover {
+    color: #3a0070;
+}
+
+a > img {
+    margin: 5px 0;
 }
