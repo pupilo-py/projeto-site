@@ -13,16 +13,22 @@ h1, h3 {
     text-align: center;
 }
 
-div {
+p {
+    text-align: justify;
+}
+
+div#body {
     background-color: white;
     max-width: 560px;
     margin: auto;
     padding: 20px;
     box-shadow: 3px 3px 5px #00000080;
+    min-height: 600px;
 }
 
 .lado {
     float: right;
+    margin-left: 10px;
 }
 
 a {
@@ -47,4 +53,10 @@ h3 > a:hover {
 
 a > img {
     margin: 5px 0;
+}
+
+@media (max-width: 357px) {
+    img#cev {
+        width: 100%;
+    }
 }
