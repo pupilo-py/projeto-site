@@ -1,4 +1,4 @@
-var a = window.document.querySelector("a")
+var a = window.document.querySelectorAll("a")
 var h3_a = window.document.querySelector("h3 > a")
 
 a.ontouchstart = () => {
