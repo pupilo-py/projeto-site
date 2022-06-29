@@ -1,29 +1,103 @@
 @charset "UTF-8";
 
+:root {
+    --cor_fundo_1:  #920FFF;
+    --cor_fundo_2: #4A0880;
+    --cor_titulo_1: #250440DD;
+    --cor_titulo_2: #610AA9;
+    --cor_link_1: #A5B300;
+    --cor_link_2: #390066;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(204, 157, 248);
-}
-
-h1, h2 {
-    color: #3a0070;
-}
-
-h1, h3 {
-    text-align: center;
-}
-
-p {
-    text-align: justify;
+    background: linear-gradient(var(--cor_fundo_1), var(--cor_fundo_2)) no-repeat;
 }
 
 div#body {
     background-color: white;
     max-width: 560px;
-    margin: auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border-radius: 1%;
     box-shadow: 3px 3px 5px #00000080;
-    min-height: 600px;
+}
+
+header {
+    margin: 20px 0;
+}
+
+header h1, main article h2, footer h3 {
+    color: var(--cor_titulo_2);
+    text-align: center;
+    margin: 16px 0;
+}
+
+header h1 {
+    color: var(--cor_titulo_1);
+}
+
+footer h3 a {
+    color: var(--cor_link_2);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+footer h3 a:hover {
+    color: var(--cor_link_1);
+    text-decoration: underline;
+}
+
+main article {
+    margin: 20px 0;
+
+}
+
+main article h2 {
+    text-align: left;
+}
+
+main article p {
+    margin: 0 16px 16px 0;
+    min-width: 164px;
+    text-align: justify;
+}
+
+main article p + p {
+    text-align: left;
+}
+
+main article p + p a {
+    color: var(--cor_link_1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main article p + p a:hover {
+    color: var(--cor_link_2);
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    div#body {
+        border-radius: 0%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 340px) {
+    header img {
+        width: 100%;
+    }
 }
 
 .lado {
@@ -31,32 +105,9 @@ div#body {
     margin-left: 10px;
 }
 
-a {
-    font-weight: bold;
-    color: #3a0070;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #1a1aff;
-}
-
-h3 > a {
-    font-style: italic;
-    color: #1a1aff;
-}
-
-h3 > a:hover {
-    color: #3a0070;
-}
-
-a > img {
-    margin: 5px 0;
-}
-
-@media (max-width: 357px) {
-    img#cev {
-        width: 100%;
+@media (max-width: 319px) {
+    .lado {
+        width: 75px;
+        height: 75px;
     }
 }
